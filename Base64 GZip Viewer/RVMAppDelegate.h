@@ -11,5 +11,8 @@
 @interface RVMAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (unsafe_unretained) IBOutlet NSTextView *base64View;
+@property (unsafe_unretained) IBOutlet NSTextView *plainView;
+- (IBAction)decode:(id)sender;
+- (IBAction)encode:(id)sender;
 @end

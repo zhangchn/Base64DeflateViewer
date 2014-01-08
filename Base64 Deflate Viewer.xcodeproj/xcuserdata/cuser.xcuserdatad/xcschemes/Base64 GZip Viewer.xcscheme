@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DBEBAED0187A5BC000874093"
-               BuildableName = "Base64 GZip Viewer.app"
-               BlueprintName = "Base64 GZip Viewer"
-               ReferencedContainer = "container:Base64 GZip Viewer.xcodeproj">
+               BuildableName = "Base64 Deflate Viewer.app"
+               BlueprintName = "Base64 Deflate Viewer"
+               ReferencedContainer = "container:Base64 Deflate Viewer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DBEBAEF1187A5BC100874093"
-               BuildableName = "Base64 GZip ViewerTests.xctest"
-               BlueprintName = "Base64 GZip ViewerTests"
-               ReferencedContainer = "container:Base64 GZip Viewer.xcodeproj">
+               BuildableName = "Base64 Deflate ViewerTests.xctest"
+               BlueprintName = "Base64 Deflate ViewerTests"
+               ReferencedContainer = "container:Base64 Deflate Viewer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DBEBAED0187A5BC000874093"
-            BuildableName = "Base64 GZip Viewer.app"
-            BlueprintName = "Base64 GZip Viewer"
-            ReferencedContainer = "container:Base64 GZip Viewer.xcodeproj">
+            BuildableName = "Base64 Deflate Viewer.app"
+            BlueprintName = "Base64 Deflate Viewer"
+            ReferencedContainer = "container:Base64 Deflate Viewer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DBEBAED0187A5BC000874093"
-            BuildableName = "Base64 GZip Viewer.app"
-            BlueprintName = "Base64 GZip Viewer"
-            ReferencedContainer = "container:Base64 GZip Viewer.xcodeproj">
+            BuildableName = "Base64 Deflate Viewer.app"
+            BlueprintName = "Base64 Deflate Viewer"
+            ReferencedContainer = "container:Base64 Deflate Viewer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DBEBAED0187A5BC000874093"
-            BuildableName = "Base64 GZip Viewer.app"
-            BlueprintName = "Base64 GZip Viewer"
-            ReferencedContainer = "container:Base64 GZip Viewer.xcodeproj">
+            BuildableName = "Base64 Deflate Viewer.app"
+            BlueprintName = "Base64 Deflate Viewer"
+            ReferencedContainer = "container:Base64 Deflate Viewer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

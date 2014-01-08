@@ -18,6 +18,9 @@
 		DBEBAEF5187A5BC100874093 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEBAED4187A5BC100874093 /* Cocoa.framework */; };
 		DBEBAEFD187A5BC100874093 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBEBAEFB187A5BC100874093 /* InfoPlist.strings */; };
 		DBEBAEFF187A5BC100874093 /* Base64_GZip_ViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEBAEFE187A5BC100874093 /* Base64_GZip_ViewerTests.m */; };
+		DBEBAF0C187A5E8200874093 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEBAF09187A5E8200874093 /* ASIDataCompressor.m */; };
+		DBEBAF0D187A5E8200874093 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEBAF0B187A5E8200874093 /* ASIDataDecompressor.m */; };
+		DBEBAF0F187A5EA800874093 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEBAF0E187A5EA800874093 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,25 +34,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DBEBAED1187A5BC100874093 /* Base64 GZip Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Base64 GZip Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEBAED1187A5BC100874093 /* Base64 Deflate Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Base64 Deflate Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEBAED4187A5BC100874093 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DBEBAED7187A5BC100874093 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DBEBAED8187A5BC100874093 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DBEBAED9187A5BC100874093 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DBEBAEDC187A5BC100874093 /* Base64 GZip Viewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Base64 GZip Viewer-Info.plist"; sourceTree = "<group>"; };
+		DBEBAEDC187A5BC100874093 /* Base64 Deflate Viewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Base64 Deflate Viewer-Info.plist"; sourceTree = "<group>"; };
 		DBEBAEDE187A5BC100874093 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DBEBAEE0187A5BC100874093 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DBEBAEE2187A5BC100874093 /* Base64 GZip Viewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Base64 GZip Viewer-Prefix.pch"; sourceTree = "<group>"; };
+		DBEBAEE2187A5BC100874093 /* Base64 Deflate Viewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Base64 Deflate Viewer-Prefix.pch"; sourceTree = "<group>"; };
 		DBEBAEE4187A5BC100874093 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		DBEBAEE6187A5BC100874093 /* RVMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RVMAppDelegate.h; sourceTree = "<group>"; };
 		DBEBAEE7187A5BC100874093 /* RVMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RVMAppDelegate.m; sourceTree = "<group>"; };
 		DBEBAEEA187A5BC100874093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DBEBAEEC187A5BC100874093 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DBEBAEF2187A5BC100874093 /* Base64 GZip ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Base64 GZip ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEBAEF2187A5BC100874093 /* Base64 Deflate ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Base64 Deflate ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEBAEF3187A5BC100874093 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		DBEBAEFA187A5BC100874093 /* Base64 GZip ViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Base64 GZip ViewerTests-Info.plist"; sourceTree = "<group>"; };
+		DBEBAEFA187A5BC100874093 /* Base64 Deflate ViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Base64 Deflate ViewerTests-Info.plist"; sourceTree = "<group>"; };
 		DBEBAEFC187A5BC100874093 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DBEBAEFE187A5BC100874093 /* Base64_GZip_ViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base64_GZip_ViewerTests.m; sourceTree = "<group>"; };
+		DBEBAF08187A5E8200874093 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		DBEBAF09187A5E8200874093 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		DBEBAF0A187A5E8200874093 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		DBEBAF0B187A5E8200874093 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		DBEBAF0E187A5EA800874093 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEBAF0F187A5EA800874093 /* libz.dylib in Frameworks */,
 				DBEBAED5187A5BC100874093 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +85,7 @@
 		DBEBAEC8187A5BC000874093 = {
 			isa = PBXGroup;
 			children = (
-				DBEBAEDA187A5BC100874093 /* Base64 GZip Viewer */,
+				DBEBAEDA187A5BC100874093 /* Base64 Deflate Viewer */,
 				DBEBAEF8187A5BC100874093 /* Base64 GZip ViewerTests */,
 				DBEBAED3187A5BC100874093 /* Frameworks */,
 				DBEBAED2187A5BC100874093 /* Products */,
@@ -86,8 +95,8 @@
 		DBEBAED2187A5BC100874093 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DBEBAED1187A5BC100874093 /* Base64 GZip Viewer.app */,
-				DBEBAEF2187A5BC100874093 /* Base64 GZip ViewerTests.xctest */,
+				DBEBAED1187A5BC100874093 /* Base64 Deflate Viewer.app */,
+				DBEBAEF2187A5BC100874093 /* Base64 Deflate ViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 		DBEBAED3187A5BC100874093 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBEBAF0E187A5EA800874093 /* libz.dylib */,
 				DBEBAED4187A5BC100874093 /* Cocoa.framework */,
 				DBEBAEF3187A5BC100874093 /* XCTest.framework */,
 				DBEBAED6187A5BC100874093 /* Other Frameworks */,
@@ -112,25 +122,30 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		DBEBAEDA187A5BC100874093 /* Base64 GZip Viewer */ = {
+		DBEBAEDA187A5BC100874093 /* Base64 Deflate Viewer */ = {
 			isa = PBXGroup;
 			children = (
 				DBEBAEE6187A5BC100874093 /* RVMAppDelegate.h */,
 				DBEBAEE7187A5BC100874093 /* RVMAppDelegate.m */,
+				DBEBAF08187A5E8200874093 /* ASIDataCompressor.h */,
+				DBEBAF09187A5E8200874093 /* ASIDataCompressor.m */,
+				DBEBAF0A187A5E8200874093 /* ASIDataDecompressor.h */,
+				DBEBAF0B187A5E8200874093 /* ASIDataDecompressor.m */,
 				DBEBAEE9187A5BC100874093 /* MainMenu.xib */,
 				DBEBAEEC187A5BC100874093 /* Images.xcassets */,
 				DBEBAEDB187A5BC100874093 /* Supporting Files */,
 			);
+			name = "Base64 Deflate Viewer";
 			path = "Base64 GZip Viewer";
 			sourceTree = "<group>";
 		};
 		DBEBAEDB187A5BC100874093 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DBEBAEDC187A5BC100874093 /* Base64 GZip Viewer-Info.plist */,
+				DBEBAEDC187A5BC100874093 /* Base64 Deflate Viewer-Info.plist */,
 				DBEBAEDD187A5BC100874093 /* InfoPlist.strings */,
 				DBEBAEE0187A5BC100874093 /* main.m */,
-				DBEBAEE2187A5BC100874093 /* Base64 GZip Viewer-Prefix.pch */,
+				DBEBAEE2187A5BC100874093 /* Base64 Deflate Viewer-Prefix.pch */,
 				DBEBAEE3187A5BC100874093 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -148,7 +163,7 @@
 		DBEBAEF9187A5BC100874093 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DBEBAEFA187A5BC100874093 /* Base64 GZip ViewerTests-Info.plist */,
+				DBEBAEFA187A5BC100874093 /* Base64 Deflate ViewerTests-Info.plist */,
 				DBEBAEFB187A5BC100874093 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -157,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DBEBAED0187A5BC000874093 /* Base64 GZip Viewer */ = {
+		DBEBAED0187A5BC000874093 /* Base64 Deflate Viewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBEBAF02187A5BC100874093 /* Build configuration list for PBXNativeTarget "Base64 GZip Viewer" */;
+			buildConfigurationList = DBEBAF02187A5BC100874093 /* Build configuration list for PBXNativeTarget "Base64 Deflate Viewer" */;
 			buildPhases = (
 				DBEBAECD187A5BC000874093 /* Sources */,
 				DBEBAECE187A5BC000874093 /* Frameworks */,
@@ -169,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = "Base64 GZip Viewer";
+			name = "Base64 Deflate Viewer";
 			productName = "Base64 GZip Viewer";
-			productReference = DBEBAED1187A5BC100874093 /* Base64 GZip Viewer.app */;
+			productReference = DBEBAED1187A5BC100874093 /* Base64 Deflate Viewer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DBEBAEF1187A5BC100874093 /* Base64 GZip ViewerTests */ = {
+		DBEBAEF1187A5BC100874093 /* Base64 Deflate ViewerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBEBAF05187A5BC100874093 /* Build configuration list for PBXNativeTarget "Base64 GZip ViewerTests" */;
+			buildConfigurationList = DBEBAF05187A5BC100874093 /* Build configuration list for PBXNativeTarget "Base64 Deflate ViewerTests" */;
 			buildPhases = (
 				DBEBAEEE187A5BC100874093 /* Sources */,
 				DBEBAEEF187A5BC100874093 /* Frameworks */,
@@ -187,9 +202,9 @@
 			dependencies = (
 				DBEBAEF7187A5BC100874093 /* PBXTargetDependency */,
 			);
-			name = "Base64 GZip ViewerTests";
+			name = "Base64 Deflate ViewerTests";
 			productName = "Base64 GZip ViewerTests";
-			productReference = DBEBAEF2187A5BC100874093 /* Base64 GZip ViewerTests.xctest */;
+			productReference = DBEBAEF2187A5BC100874093 /* Base64 Deflate ViewerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DBEBAECC187A5BC000874093 /* Build configuration list for PBXProject "Base64 GZip Viewer" */;
+			buildConfigurationList = DBEBAECC187A5BC000874093 /* Build configuration list for PBXProject "Base64 Deflate Viewer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,8 +235,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DBEBAED0187A5BC000874093 /* Base64 GZip Viewer */,
-				DBEBAEF1187A5BC100874093 /* Base64 GZip ViewerTests */,
+				DBEBAED0187A5BC000874093 /* Base64 Deflate Viewer */,
+				DBEBAEF1187A5BC100874093 /* Base64 Deflate ViewerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEBAF0C187A5E8200874093 /* ASIDataCompressor.m in Sources */,
+				DBEBAF0D187A5E8200874093 /* ASIDataDecompressor.m in Sources */,
 				DBEBAEE8187A5BC100874093 /* RVMAppDelegate.m in Sources */,
 				DBEBAEE1187A5BC100874093 /* main.m in Sources */,
 			);
@@ -271,7 +288,7 @@
 /* Begin PBXTargetDependency section */
 		DBEBAEF7187A5BC100874093 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DBEBAED0187A5BC000874093 /* Base64 GZip Viewer */;
+			target = DBEBAED0187A5BC000874093 /* Base64 Deflate Viewer */;
 			targetProxy = DBEBAEF6187A5BC100874093 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -386,8 +403,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Base64 GZip Viewer/Base64 GZip Viewer-Prefix.pch";
-				INFOPLIST_FILE = "Base64 GZip Viewer/Base64 GZip Viewer-Info.plist";
+				GCC_PREFIX_HEADER = "Base64 GZip Viewer/Base64 Deflate Viewer-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Base64 GZip Viewer/Base64 Deflate Viewer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -399,8 +416,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Base64 GZip Viewer/Base64 GZip Viewer-Prefix.pch";
-				INFOPLIST_FILE = "Base64 GZip Viewer/Base64 GZip Viewer-Info.plist";
+				GCC_PREFIX_HEADER = "Base64 GZip Viewer/Base64 Deflate Viewer-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Base64 GZip Viewer/Base64 Deflate Viewer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -409,7 +426,7 @@
 		DBEBAF06187A5BC100874093 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Base64 GZip Viewer.app/Contents/MacOS/Base64 GZip Viewer";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Base64 Deflate Viewer.app/Contents/MacOS/Base64 Deflate Viewer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -421,7 +438,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Base64 GZip ViewerTests/Base64 GZip ViewerTests-Info.plist";
+				INFOPLIST_FILE = "Base64 GZip ViewerTests/Base64 Deflate ViewerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -431,7 +448,7 @@
 		DBEBAF07187A5BC100874093 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Base64 GZip Viewer.app/Contents/MacOS/Base64 GZip Viewer";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Base64 Deflate Viewer.app/Contents/MacOS/Base64 Deflate Viewer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -439,7 +456,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Base64 GZip Viewer/Base64 GZip Viewer-Prefix.pch";
-				INFOPLIST_FILE = "Base64 GZip ViewerTests/Base64 GZip ViewerTests-Info.plist";
+				INFOPLIST_FILE = "Base64 GZip ViewerTests/Base64 Deflate ViewerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -449,7 +466,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DBEBAECC187A5BC000874093 /* Build configuration list for PBXProject "Base64 GZip Viewer" */ = {
+		DBEBAECC187A5BC000874093 /* Build configuration list for PBXProject "Base64 Deflate Viewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBEBAF00187A5BC100874093 /* Debug */,
@@ -458,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBEBAF02187A5BC100874093 /* Build configuration list for PBXNativeTarget "Base64 GZip Viewer" */ = {
+		DBEBAF02187A5BC100874093 /* Build configuration list for PBXNativeTarget "Base64 Deflate Viewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBEBAF03187A5BC100874093 /* Debug */,
@@ -466,7 +483,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		DBEBAF05187A5BC100874093 /* Build configuration list for PBXNativeTarget "Base64 GZip ViewerTests" */ = {
+		DBEBAF05187A5BC100874093 /* Build configuration list for PBXNativeTarget "Base64 Deflate ViewerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBEBAF06187A5BC100874093 /* Debug */,

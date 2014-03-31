@@ -13,6 +13,7 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (unsafe_unretained) IBOutlet NSTextView *base64View;
 @property (unsafe_unretained) IBOutlet NSTextView *plainView;
+@property (weak) IBOutlet NSTextField *statusLabel;
 - (IBAction)decode:(id)sender;
 - (IBAction)encode:(id)sender;
 @end

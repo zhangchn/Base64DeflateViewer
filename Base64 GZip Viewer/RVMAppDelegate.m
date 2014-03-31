@@ -107,17 +107,38 @@ NSData *DataWithBase64String(NSString *theString)
     paragraphStyle.lineBreakMode = NSLineBreakByCharWrapping;
     [self.base64View.textStorage setAttributes:@{NSParagraphStyleAttributeName : paragraphStyle}
                                          range:NSMakeRange(0, self.base64View.string.length)];
+    self.statusLabel.stringValue = @"";
 }
 
+- (void)updateCommaCount:(NSString *)plainString {
+    NSRange r = NSMakeRange(0, plainString.length);
+    NSRange foundRange = NSMakeRange(NSNotFound, 0);
+    NSUInteger countOfComma = 0;
+    do {
+        foundRange = [plainString rangeOfString:@"," options:0 range:r];
+        if (foundRange.location == NSNotFound) {
+            break;
+        }
+        r = NSMakeRange(foundRange.location + 1, plainString.length - foundRange.location - 1);
+        countOfComma ++;
+    } while (1);
+
+    self.statusLabel.stringValue = [NSString stringWithFormat:@"%d", (int)countOfComma + 1];
+
+}
 - (IBAction)decode:(id)sender {
     NSString *encodedString = self.base64View.string;
     NSData *decodedUncompressedData = [ASIDataDecompressor uncompressData:DataWithBase64String(encodedString) error:nil];
-    self.plainView.string = [[NSString alloc] initWithBytes:decodedUncompressedData.bytes length:decodedUncompressedData.length encoding:NSUTF8StringEncoding];
+    NSString *plainString = [[NSString alloc] initWithBytes:decodedUncompressedData.bytes length:decodedUncompressedData.length encoding:NSUTF8StringEncoding];
+    self.plainView.string = plainString;
+    [self updateCommaCount:plainString];
 }
 
 - (IBAction)encode:(id)sender {
     NSString *dataString = self.plainView.string;
     NSString *encodedCompressedData = Base64StringWithData([ASIDataCompressor compressData:[dataString dataUsingEncoding:NSASCIIStringEncoding] error:nil]);
     self.base64View.string = encodedCompressedData;
+
+    [self updateCommaCount:dataString];
 }
 @end

@@ -115,7 +115,7 @@ NSData *DataWithBase64String(NSString *theString)
     NSRange foundRange = NSMakeRange(NSNotFound, 0);
     NSUInteger countOfComma = 0;
     do {
-        foundRange = [plainString rangeOfString:@"," options:0 range:r];
+        foundRange = [plainString rangeOfString:@"),(" options:0 range:r];
         if (foundRange.location == NSNotFound) {
             break;
         }

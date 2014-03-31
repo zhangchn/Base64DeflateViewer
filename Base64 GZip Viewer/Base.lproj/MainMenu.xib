@@ -760,7 +760,7 @@
                             <action selector="encode:" target="494" id="79l-Bs-caN"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zSK-ae-Rb4">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zSK-ae-Rb4">
                         <rect key="frame" x="12" y="4" width="459" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status." id="eq6-QP-lq5">
@@ -776,16 +776,19 @@
                     <constraint firstItem="4o3-Nv-g4i" firstAttribute="top" secondItem="372" secondAttribute="top" constant="6" id="8Wo-Ks-lII"/>
                     <constraint firstAttribute="trailing" secondItem="slW-bD-8Si" secondAttribute="trailing" constant="95" id="AsY-8s-OHn"/>
                     <constraint firstItem="c2c-IO-m7b" firstAttribute="top" secondItem="4o3-Nv-g4i" secondAttribute="bottom" constant="8" id="C3d-nt-GFh"/>
+                    <constraint firstAttribute="bottom" secondItem="zSK-ae-Rb4" secondAttribute="bottom" constant="4" id="CEH-dr-JTX"/>
                     <constraint firstItem="slW-bD-8Si" firstAttribute="centerY" secondItem="372" secondAttribute="centerY" id="EIt-F6-5o8"/>
                     <constraint firstItem="t1v-Dw-Bcu" firstAttribute="top" secondItem="PAk-l9-Wax" secondAttribute="bottom" constant="5" id="Hyb-f9-QMm"/>
                     <constraint firstAttribute="trailing" secondItem="c2c-IO-m7b" secondAttribute="trailing" constant="11" id="IsA-q0-d5a"/>
                     <constraint firstItem="slW-bD-8Si" firstAttribute="top" secondItem="c2c-IO-m7b" secondAttribute="bottom" constant="3" id="Q4Z-ZJ-qPB"/>
+                    <constraint firstAttribute="trailing" secondItem="zSK-ae-Rb4" secondAttribute="trailing" constant="11" id="QIC-dM-jv6"/>
                     <constraint firstItem="y1d-7n-SMh" firstAttribute="leading" secondItem="PAk-l9-Wax" secondAttribute="trailing" constant="46" id="QUp-MA-WAw"/>
                     <constraint firstItem="slW-bD-8Si" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="y1d-7n-SMh" secondAttribute="trailing" constant="30" id="SBC-jJ-S0D"/>
                     <constraint firstItem="4o3-Nv-g4i" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="12" id="Uh0-Iv-g2k"/>
                     <constraint firstItem="t1v-Dw-Bcu" firstAttribute="top" secondItem="slW-bD-8Si" secondAttribute="bottom" constant="6" id="X0T-Xs-9mr"/>
                     <constraint firstItem="c2c-IO-m7b" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="12" id="c3A-Oj-GyJ"/>
                     <constraint firstItem="t1v-Dw-Bcu" firstAttribute="trailing" secondItem="c2c-IO-m7b" secondAttribute="trailing" id="ePU-Uo-yyg"/>
+                    <constraint firstItem="zSK-ae-Rb4" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="14" id="ipN-vD-c0V"/>
                     <constraint firstItem="t1v-Dw-Bcu" firstAttribute="leading" secondItem="PAk-l9-Wax" secondAttribute="leading" id="s9b-TQ-6xl"/>
                     <constraint firstItem="t1v-Dw-Bcu" firstAttribute="leading" secondItem="c2c-IO-m7b" secondAttribute="leading" id="vtO-EA-1Gq"/>
                 </constraints>
